@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Final Project</title>
+    <style>
+      *,
+      html,
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      header {
+        background-color: #db991e;
+      }
+
+      .navbar {
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .navbar-item {
+        color: white;
+        width: 120px;
+        justify-content: center;
+        display: flex;
+        font-size: x-large;
+        list-style: none;
+      }
+
+      .navbar-item > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      main {
+        min-height: 100vh;
+        background-color: #f9f7f1;
+      }
+
+      .content-section {
+        justify-items: center;
+        align-items: center;
+      }
+
+      .card-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        padding: 50px !important;
+        border-radius: 8px;
+      }
+
+      form input,
+      form textarea {
+        width: 500px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        margin: 5px 0 !important;
+        padding: 10px !important;
+        font-size: 16px;
+        color: #333;
+        outline: none;
+        transition: border-color 0.3s ease;
+      }
+
+      form input::placeholder,
+      form textarea::placeholder {
+        color: #aaa;
+      }
+
+      form input:focus,
+      form textarea:focus {
+        border-bottom: 2px solid #f9a825;
+      }
+
+      form button {
+        background-color: #db991e;
+        color: white;
+        margin: 5px 0 !important;
+        padding: 10px 20px !important;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+        width: 500px;
+        transition: background-color 0.3s ease;
+      }
+
+      form button:hover {
+        background-color: #f9a825;
+      }
+
+      footer {
+        background: #db991e;
+        color: white;
+        height: 30px;
+        display: flex;
+        font-size: small;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        padding: 30px 0 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li class="navbar-item"><a href="/">Home</a></li>
+          <li class="navbar-item"><a href="/about.html">About</a></li>
+          <li class="navbar-item"><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content-section">
+        <h2 style="text-align: center">Butuh wallpaper lainnya? Contact Me.</h2>
+
+        <div class="card-form">
+          <form method="get">
+            <input type="text" placeholder="Your Name" name="name" /> <br />
+            <input type="email" placeholder="Your Email" name="email" /><br />
+            <input type="number" placeholder="Your Phone" name="phone" /><br />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              cols="30"
+              rows="3"
+            ></textarea>
+            <br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; iAppTech.id 2024 | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

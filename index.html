@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML - Final Project</title>
+    <style>
+      *,
+      html,
+      body {
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      header {
+        background-color: #db991e;
+      }
+
+      .navbar {
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .navbar-item {
+        color: white;
+        width: 120px;
+        justify-content: center;
+        display: flex;
+        font-size: x-large;
+        list-style: none;
+      }
+
+      .navbar-item > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #f9f7f1;
+      }
+
+      .hero-section {
+        width: 100%;
+        height: 400px;
+      }
+
+      .hero-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .content-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center; /* Menengahkan konten dalam grid */
+        align-items: center;
+        margin: 20px 0 !important;
+      }
+
+      .card {
+        background-color: #eedeb8;
+        width: 300px;
+        border-radius: 8px;
+        text-align: center;
+        padding-bottom: 15px !important;
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: fill;
+        border-radius: 8px;
+      }
+
+      footer {
+        background: #db991e;
+        color: white;
+        height: 30px;
+        display: flex;
+        font-size: small;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul class="navbar">
+          <li class="navbar-item"><a href="/">Home</a></li>
+          <li class="navbar-item"><a href="/about.html">About</a></li>
+          <li class="navbar-item"><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero-section">
+        <img src="./assets/img/nar0.jpg" alt="naruto" class="hero-image" />
+      </div>
+
+      <div class="content-section">
+        <div class="card">
+          <a href="/about.html"
+            ><img src="./assets/img/nar1.jpg" alt="nar1"
+          /></a>
+          <p>Wallpaper-1</p>
+        </div>
+
+        <div class="card">
+          <a href="/about.html"
+            ><img src="./assets/img/nar2.jpg" alt="nar2"
+          /></a>
+          <p>Wallpaper-2</p>
+        </div>
+
+        <div class="card">
+          <a href="/about.html"
+            ><img src="./assets/img/nar3.jpg" alt="nar3" />
+            <p>Wallpaper-3</p>
+          </a>
+        </div>
+
+        <div class="card">
+          <a href="/about.html">
+            <img src="./assets/img/nar4.jpg" alt="nar3" />
+          </a>
+          <p>Wallpaper-4</p>
+        </div>
+
+        <div class="card">
+          <a href="/about.html"
+            ><img src="./assets/img/nar5.png" alt="nar3"
+          /></a>
+          <p>Wallpaper-5</p>
+        </div>
+
+        <div class="card">
+          <a href="/about.html">
+            <img src="./assets/img/nar6.jpeg" alt="nar3"
+          /></a>
+          <p>Wallpaper-6</p>
+        </div>
+
+        <div class="card">
+          <a href="/about.html"
+            ><img src="./assets/img/nar7.jpeg" alt="nar3"
+          /></a>
+          <p>Wallpaper-7</p>
+        </div>
+
+        <div class="card">
+          <a href="/about.html">
+            <img src="./assets/img/nar8.jpeg" alt="nar3"
+          /></a>
+          <p>Wallpaper-8</p>
+        </div>
+
+        <div class="card">
+          <a href="/about.html">
+            <img src="./assets/img/nar9.jpeg" alt="nar3" />
+          </a>
+          <p>Wallpaper-9</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; iAppTech.id 2024 | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

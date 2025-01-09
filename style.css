@@ -1,0 +1,25 @@
+*,
+html,
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+header {
+  background: #0f5473;
+}
+
+.navbar {
+  display: flex;
+  height: 50px;
+}
+
+.navbar-item {
+  color: white;
+  list-style: none;
+  background: #0f54;
+}
+
+.navbar-item > a {
+  color: white;
+}
